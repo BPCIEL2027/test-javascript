@@ -1,2 +1,13 @@
-<h1>Bonjour GitHub !</h1>
-<script>console.log("Le JS fonctionne !");</script>
+<h1 id="titre">Bonjour GitHub !</h1>
+
+<script>
+    // On sélectionne le titre grâce à son ID
+    const monTitre = document.querySelector('#titre');
+    
+    // On change le texte et la couleur après 2 secondes
+    setTimeout(() => {
+        monTitre.textContent = "Le JavaScript a pris le contrôle !";
+        monTitre.style.color = "red";
+        console.log("La transformation est terminée.");
+    }, 2000);
+</script>
